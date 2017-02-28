@@ -1,4 +1,4 @@
-//CodeVs 1732 FibonacciÊýÁÐ 2
+//CodeVs 1732 Fibonacci 2
 
 #include <iostream>
 using namespace std;
