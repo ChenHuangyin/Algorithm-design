@@ -1,4 +1,4 @@
-//CodeVs 1978 FibonacciÊýÁÐ 3  
+//CodeVs 1978 Fibonacci 3  
 
 #include <iostream>
 using namespace std;
