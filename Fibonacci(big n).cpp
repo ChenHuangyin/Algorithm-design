@@ -1,5 +1,3 @@
-//CodeVs 1732 Fibonacci 2
-
 #include <iostream>
 using namespace std;
 #define N 1000000007 //mod
