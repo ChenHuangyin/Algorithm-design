@@ -1,9 +1,7 @@
-//CodeVs 1978 Fibonacci 3  
-
 #include <iostream>
 using namespace std;
 
-int fibon[41];
+int fibon[101];
 
 void init()
 {
@@ -33,7 +31,7 @@ int main()
 {
 	init();
 	int n;
-	cin >> n;
+	while(cin >> n)
 	cout << fib(n) << endl;
 	return 0;
 }
