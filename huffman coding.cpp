@@ -5,7 +5,7 @@ struct node{
 	int fc;
 	char c;
 	int depth;
-	node():fc(-1),c('*'),depth(0){}
+	node():fc(0),c('*'),depth(0){}
 	node(const node &a):fc(a.fc),c(a.c),depth(a.depth){}
 	node(int f,char ch,int d):fc(f),c(ch),depth(d){}
 };
@@ -49,6 +49,7 @@ int solve(huffman_tree *t)
 		while(t)
 		{
 			s.push(t);
+			if(t->data.c!='*')
 			ans+=(t->data.depth*t->data.fc);
 			t=t->left;
 			
