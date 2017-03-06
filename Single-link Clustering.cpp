@@ -14,7 +14,7 @@ int main()
 		bool *visited=new bool[n];
 		int cnt=0;
 		
-		for(int i=0;i<n;i++)    //³õÊ¼»¯ 
+		for(int i=0;i<n;i++)    //初始化 
 		{
 			visited[i]=0;
 			low[i]=0;
@@ -41,7 +41,7 @@ int main()
 		double min=INT_MAX;
 		int pos=0;
 		
-		for(int i=0;i<n-1;i++) //prim  ÒÑ¾­visitedÁË0ºÅÏÂ±êËùÒÔÕâÀï¼õÒ» 
+		for(int i=0;i<n-1;i++) //prim 已经更新了下标为0的点 故这里减一 
 		{
 			min=INT_MAX;
 			for(int j=0;j<n;j++)
@@ -55,7 +55,7 @@ int main()
 			visited[pos]=1;
 			MST[cnt++]=min;
 			
-			for(int j=0;j<n;j++)  //¸üÐÂlow 
+			for(int j=0;j<n;j++)  //更新low 
 			{
 				if(visited[j]==0 && low[j]> dis[pos][j] && dis[pos][j]!=0)
 				{
@@ -63,8 +63,8 @@ int main()
 				}
 			}
 		} 
-		sort(MST,MST+cnt,greater<double>()); //×îÐ¡Éú³ÉÊ÷±ß³¤ ½µÐòÅÅÐò 
-		cout << fixed << setprecision(2) << MST[k-2] << endl; //µÚk-1´ó 
+		sort(MST,MST+cnt,greater<double>()); //升序排列 MST的各边长度 
+		cout << fixed << setprecision(2) << MST[k-2] << endl; //第k-1大的边 
 	}
 	return 0; 
 }
