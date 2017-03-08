@@ -49,7 +49,7 @@ int solve(huffman_tree *t)
 		while(t)
 		{
 			s.push(t);
-			if(t->data.c!='*')
+		
 			ans+=(t->data.depth*t->data.fc);
 			t=t->left;
 			
