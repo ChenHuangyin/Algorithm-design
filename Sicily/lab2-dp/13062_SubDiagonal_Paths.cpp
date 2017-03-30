@@ -14,18 +14,15 @@ int main()
 		{
 			for(int j=0;j<=n;j++)
 			{
-				
-				
 				if(i==j && j!=0)
 				dp[i][j]=dp[i][j-1];
 				else if(i>j && j!=0)
 				dp[i][j]=dp[i][j-1]+dp[i-1][j];
 				else if(i>j && j==0)
 				dp[i][j]=1;
-				
-				
 			}
 		}
 		cout << dp[n][n] << endl;
-	}	
+	}
+	return 0;
 }
