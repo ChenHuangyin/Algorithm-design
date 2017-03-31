@@ -33,7 +33,7 @@ int main()
 			double average=sum/(double)k;
 			for(int j=0;j<k;j++)
 			{
-				if(fabs(average-lens[j+i*k])-2.0>0.000001)
+				if(average-lens[j+i*k]-2.0>0.000001)
 				{
 					flag=0;
 					break;
