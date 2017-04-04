@@ -14,9 +14,9 @@ double _dis[21][21],dp[21][100000];
 
 int main()  
 {  
-	int T,n;
+    int T,n;
     cin >> T;
-	point p[25];  
+    point p[25];  
     while(T--)  
     {
 		memset(_dis,0,sizeof(_dis));
