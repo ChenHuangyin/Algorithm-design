@@ -19,9 +19,9 @@ int main()
     point p[25];  
     while(T--)  
     {
-		memset(_dis,0,sizeof(_dis));
-		memset(dp,0,sizeof(dp));
-		cin >> n;   
+	memset(_dis,0,sizeof(_dis));
+	memset(dp,0,sizeof(dp));
+	cin >> n;   
         int cnt=1;  
         for(int i=2;i<n;i++) 
 		cnt<<=1;       
