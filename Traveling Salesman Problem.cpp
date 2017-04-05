@@ -10,7 +10,7 @@ double dis(point a,point b)
     return sqrt( (a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y) );  
 }  
 
-double _dis[21][21],dp[21][100000];  
+double _dis[21][21],dp[21][1000000];  
 
 int main()  
 {  
