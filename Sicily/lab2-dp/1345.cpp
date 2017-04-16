@@ -16,10 +16,10 @@ int main()
 			data[N+i]=data[i];
 		}
 		
-		for(int i=1;i<=N;i++)
+		for(int i=2*N;i>=1;i--)
 		for(int j=i;j<=i+N;j++)
 		{
-			if(i==j) continue;
+			if(i==j)continue;
 			for(int k=i;k<j;k++)
 			{
 				dp[i][j]=max(dp[i][j], dp[i][k]+dp[k+1][j]+data[i]*data[j+1]*data[k+1]);
